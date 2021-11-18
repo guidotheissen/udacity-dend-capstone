@@ -17,7 +17,6 @@ class CodeUtilities:
 
     def getCityCode(self, s, sc):
         """
-        :param us_cities_df: spark dataframe containing US cities
         :param s: string for city name
         :param sc: string for state code
         :return: String 3 letter city code
