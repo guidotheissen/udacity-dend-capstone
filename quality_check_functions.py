@@ -23,7 +23,7 @@ def check_all_lines_loaded(df, file_name, hasHeaderLine):
 
 
 def check_existence(df, expression):
-    any_expression = 'ANY('+expression+') as chk'
+    any_expression = '('+expression+') as chk'
     check = df.selectExpr(any_expression)
     if check.collect()[0][0]:
         print(f"<Check existence> quality check succeeeded")
